@@ -1,28 +1,30 @@
-# Day 1: Simple Printing in Python
+# Day 1: Learning Simple Printing in Python
 
-# The 'print()' function is used to display text or other output in the console.
-# In Python, you can print strings (text), numbers, or a combination of both.
+# Printing "Hello world" with a newline character (\n)
+print("Hello world\nHello world")
 
-# Printing a simple string
-print("Hello, world!")  # This will output: Hello, world!
+# Updating the code to add an exclamation mark
+print("Hello world!")
 
-# Printing numbers
-print(42)  # This will output: 42
+# Asking for user input and checking the length of the input
+user_input = input("Enter something: ")
+print(f"Length of your input: {len(user_input)}")
 
-# Printing multiple values with commas (Python will add spaces between them)
-print("I am", 22, "years old.")  # This will output: I am 22 years old.
+# Variable naming rules
+# - Variable names should start with a letter or an underscore (_)
+# - Cannot start with a number
+# - Variable names are case-sensitive
+# - Should not use Python keywords like 'print', 'input', etc.
 
-# You can use single or double quotes for strings in Python
-print('Learning Python is fun!')  # This will output: Learning Python is fun!
+# Creating a greeting for the program
+print("Welcome to the Band Name Generator!")
 
-# Printing multiple lines using escape characters like '\n' for a newline
-print("Line 1\nLine 2\nLine 3")  # This will output:
-# Line 1
-# Line 2
-# Line 3
+# Asking the user for the city they grew up in and storing it in a variable
+city = input("What's the name of the city you grew up in?\n")
 
-# Print doesn't add any formatting by itself, so you can use '\t' for tabs as well
-print("Item\tPrice\nApple\t$1\nBanana\t$0.5")  # This will output:
-# Item    Price
-# Apple   $1
-# Banana  $0.5
+# Asking the user for the name of their pet and storing it in a variable
+pet = input("What's the name of your pet?\n")
+
+# Combining the city and pet name to suggest a band name
+band_name = city + " " + pet
+print("Your band name could be: " + band_name)
